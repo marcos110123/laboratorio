@@ -4,11 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curriculo do Marcos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <style>
       * {
         margin: 0;
         padding: 0;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Roboto";
       }
       body {
         padding: 30px;
@@ -16,85 +22,131 @@
       .dadospessoais {
         display: flex;
         align-items: center;
+        column-gap: 20px;
       }
       .dadospessoais div:last-child {
         padding-left: 15px;
       }
       h2 {
         margin-top: 30px;
+        color: rgba(0, 0, 0, 0.5);
+        border-left: 2px solid rgba(0, 0, 0, 0.5);
+        padding-left: 15px;
+      }
+      table {
+        border-color: silver;
+        border-width: 1px;
+        border-style: solid;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border-color: silver;
+        border-width: 1px;
+        border-style: solid;
+        padding: 10px;
+      }
+      h3,
+      h4,
+      h5 {
+        margin-top: 15px;
+      }
+      p {
+        margin-top: 10px;
+        line-height: 25px;
+      }
+      img {
+        border-radius: 50%;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+      }
+      ul {
+        margin-left: 20px;
+      }
+      li:not(:last-child) {
+        margin-bottom: 5px;
+      }
+      h1 {
+        color: rgba(0, 0, 0, 0.5);
+        margin-bottom: 15px;
+      }
+      h5 {
+        font-style: italic;
+        font-weight: 400;
+      }
+      a {
+        color: rgba(0, 0, 0, 0.75);
+        text-decoration: none;
       }
     </style>
   </head>
   <body>
     <div class="dadospessoais">
       <div>
-        <img src="flecha.jpeg" alt="foto do Marcos" width="200" />
+        <img src="avatar.jpeg" alt="foto do Marcos" width="200" />
       </div>
       <div>
         <h1>Marcos Souza</h1>
-        Telefone:
-        <a href="tel:+5517996045305"> (17) 99604-5305 </a>
-        <br />
-        Email:
-        <a href="mailto:marcossouzasia@gmail.com"> marcossouzasia@gmail.com </a>
+        <p>
+          Telefone:
+          <a href="tel:+5517996045305"> (17) 99604-5305 </a>
+        </p>
+        <p>
+          Email:
+          <a href="mailto:marcossouzasia@gmail.com">
+            marcossouzasia@gmail.com
+          </a>
+        </p>
       </div>
     </div>
     <div>
       <h2>Sobre mim</h2>
-      <br />
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-      deleniti, laudantium, aut accusamus rerum qui distinctio, ipsa ex magni
-      exercitationem quis maxime repellendus! Ex nam impedit reiciendis
-      recusandae architecto quisquam.
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+        deleniti, laudantium, aut accusamus rerum qui distinctio, ipsa ex magni
+        exercitationem quis maxime repellendus! Ex nam impedit reiciendis
+        recusandae architecto quisquam.
+      </p>
     </div>
     <div>
       <h2>Experiência profissional</h2>
-      <br />
-      01/01/2021 - 31/12/2024
-      <br />
-      Amendola e Amendola
-      <br />
-      Helpdesk
-      <br />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae neque
-      non nobis ipsa, possimus culpa, ducimus et quisquam eligendi mollitia ab.
-      Adipisci laboriosam commodi in mollitia amet eligendi eum beatae.
-      <br />
-      01/01/2020 - 31/12/2021
-      <br />
-      La Brasa
-      <br />
-      Garçom
-      <br />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Non corporis
-      vitae perferendis eligendi blanditiis? Nisi deleniti quis accusamus
-      impedit sit veritatis quisquam unde facere! Deserunt harum velit quibusdam
-      beatae saepe.
+      <h3>Amendola e Amendola</h3>
+      <h4>Helpdesk</h4>
+      <h5>01/01/2021 - 31/12/2024</h5>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae neque
+        non nobis ipsa, possimus culpa, ducimus et quisquam eligendi mollitia
+        ab. Adipisci laboriosam commodi in mollitia amet eligendi eum beatae.
+      </p>
+      <h3>La Brasa</h3>
+      <h4>Garçom</h4>
+      <h5>01/01/2020 - 31/12/2021</h5>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non corporis
+        vitae perferendis eligendi blanditiis? Nisi deleniti quis accusamus
+        impedit sit veritatis quisquam unde facere! Deserunt harum velit
+        quibusdam beatae saepe.
+      </p>
     </div>
     <div>
       <h2>Educação e formação</h2>
-      <br />
-      01/01/2015 - 31/12/2019
-      <br />
-      Unip
-      <br />
-      Tecnologia da informação
-      <br />
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
-      accusamus doloremque accusantium velit numquam itaque ipsum animi
-      similique vero officiis culpa mollitia soluta, nobis, fugit
-      necessitatibus. Natus laboriosam similique necessitatibus!
-      <br />
-      01/01/2016 - 31/12/2018
-      <br />
-      Unip
-      <br />
-      Administração
-      <br />
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-      harum corrupti provident eveniet at saepe, nam recusandae quo dignissimos
-      voluptate quidem quas possimus hic similique iure a asperiores, magnam
-      sint?
+      <h3>Unip</h3>
+      <h4>Tecnologia da informação</h4>
+      <h5>01/01/2015 - 31/12/2019</h5>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis
+        accusamus doloremque accusantium velit numquam itaque ipsum animi
+        similique vero officiis culpa mollitia soluta, nobis, fugit
+        necessitatibus. Natus laboriosam similique necessitatibus!
+      </p>
+      <h3>Unip</h3>
+      <h4>Administração</h4>
+      <h5>01/01/2016 - 31/12/2018</h5>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        harum corrupti provident eveniet at saepe, nam recusandae quo
+        dignissimos voluptate quidem quas possimus hic similique iure a
+        asperiores, magnam sint?
+      </p>
     </div>
     <div>
       <h2>Competências linguisticas</h2>
